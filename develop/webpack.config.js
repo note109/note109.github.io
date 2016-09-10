@@ -9,8 +9,8 @@ module.exports = {
   ],
   output: {
     path: path.resolve("./dist"),
-    filename: "bundle.js",
     publicPath: "/app/",
+    filename: "bundle.js",
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
