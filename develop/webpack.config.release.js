@@ -33,10 +33,6 @@ module.exports = {
         include: __dirname,
       },
       {
-        test: /\.scss$/,
-        loader: "style-loader!css-loader?modules!sass-loader",
-      },
-      {
         test: /\.css$/,
         loader: "style-loader!css-loader",
         include: __dirname,
