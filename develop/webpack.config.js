@@ -28,10 +28,6 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
-        loader: "style-loader!css-loader?modules&localIdentName=[path]__[local]___[hash:base64:5]!sass-loader",
-      },
-      {
         test: /\.css$/,
         loader: "style-loader!css-loader",
         include: __dirname,
