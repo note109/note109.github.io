@@ -4,6 +4,7 @@ import {browserHistory} from "react-router";
 
 // style
 import {StyleElement} from "app/utils/style.js";
+import "./style.js";
 
 
 // pages
