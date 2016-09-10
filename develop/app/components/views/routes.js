@@ -3,12 +3,8 @@ import {Router, Route, Redirect} from "react-router";
 import {browserHistory} from "react-router";
 
 // style
-import {Style, StyleElement} from "./style.js";
+import {StyleElement} from "app/utils/style.js";
 
-Style.registerRule("body", {
-  margin: 0,
-  padding: 0,
-});
 
 // pages
 import Index from "./Index/index.js";

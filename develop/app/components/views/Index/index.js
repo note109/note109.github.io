@@ -1,6 +1,6 @@
 import React, {PropTypes, Component} from "react";
 
-import {Style, StyleElement} from "app/components/views/style.js";
+import {Style, StyleElement} from "app/utils/style.js";
 import {TEXT} from "./style.js";
 
 class Index extends Component {
