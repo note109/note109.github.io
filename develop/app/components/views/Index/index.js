@@ -1,10 +1,17 @@
 import React, {PropTypes, Component} from "react";
 
+import {Style, StyleElement} from "app/components/views/style.js";
+import {TEXT} from "./style.js";
+
 class Index extends Component {
   render() {
     return (
       <div>
-        <h1>aaa</h1>
+        <p className={TEXT}>
+          hello
+        </p>
+
+        <StyleElement />
       </div>
     );
   }
@@ -13,4 +20,4 @@ class Index extends Component {
 Index.propTypes = {
 };
 
-export default Index;
+export default Style.component(Index);
