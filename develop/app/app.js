@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-// import "file?name=[name].[ext]!./index.html";
+import "file?name=[name].[ext]!./index.html";
 
 import "babel-polyfill";
 import React from "react";
