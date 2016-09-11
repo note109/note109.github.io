@@ -3,6 +3,16 @@
 	height: 361px;
 }
 
+.svg-facebook-dims {
+	width: 266.89px;
+	height: 266.89px;
+}
+
+.svg-github-dims {
+	width: 32.58px;
+	height: 31.77px;
+}
+
 .svg-html5-dims {
 	width: 256px;
 	height: 361px;
@@ -26,5 +36,10 @@
 .svg-rails-dims {
 	width: 256px;
 	height: 330px;
+}
+
+.svg-twitter-dims {
+	width: 300px;
+	height: 244.187px;
 }
 
