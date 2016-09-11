@@ -1,4 +1,4 @@
 {
   "presets": ["es2015", "react", "stage-3"],
-  "plugins": ["transform-function-bind"],
+  "plugins": ["transform-function-bind", "transform-object-rest-spread"],
 }
