@@ -7,6 +7,11 @@ export const flexRow = {
   flexDirection: "row",
 };
 
+export const flexColumn = {
+  display: "flex",
+  flexDirection: "column",
+};
+
 
 export const borderStyle = {
   borderColor: "#000",

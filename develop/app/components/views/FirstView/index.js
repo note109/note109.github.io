@@ -2,9 +2,9 @@ import React, {PropTypes, Component} from "react";
 
 import {Style, StyleElement} from "app/utils/style.js";
 import {
-  TEXT,
+  COPY,
   FIRST_VIEW,
-  RIGHT,
+  NAME,
 } from "./style.js";
 
 class FirstView extends Component {
@@ -12,14 +12,14 @@ class FirstView extends Component {
     return (
       <div>
         <div className={FIRST_VIEW}>
-          <div>
-            <h1 className={TEXT}>Enchant</h1>
-            <h1 className={TEXT}>Your</h1>
-            <h1 className={TEXT}>World</h1>
-          </div>
-          <div className={RIGHT}>
+          <div className={NAME}>
             <p>note109</p>
           </div>
+          <h1 className={COPY}>
+            Enchant<br />
+            Your<br />
+            World
+          </h1>
         </div>
 
         <StyleElement />
