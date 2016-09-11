@@ -4,6 +4,7 @@ import {Style, StyleElement} from "app/utils/style.js";
 
 import FirstView from "app/components/views/FirstView/index.js";
 import Skills from "app/components/views/Skills/index.js";
+import LastView from "app/components/views/LastView/index.js";
 
 class Index extends Component {
   render() {
@@ -11,6 +12,7 @@ class Index extends Component {
       <div>
         <FirstView />
         <Skills />
+        <LastView />
 
         <StyleElement />
       </div>
