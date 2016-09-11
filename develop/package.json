@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint ./app",
+    "svg": "gulp icons",
     "build": "webpack --config ./webpack.config.release.js"
   },
   "repository": {
