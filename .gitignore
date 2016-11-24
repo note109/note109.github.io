@@ -28,3 +28,6 @@ lib-cov
 nbproject
 npm-debug.log
 bower_components
+
+# Generated files created by Gulp
+dest/
