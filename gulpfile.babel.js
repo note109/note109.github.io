@@ -24,10 +24,10 @@ gulp.task("js", () => {
 });
 
 gulp.task("pug", () => {
-  gulp.src("./app/views/*.pug")
+  gulp.src(["./app/views/*.pug", "./app/*.pug"], {base: "app"})
     .pipe($.plumber())
     .pipe($.pug())
-    .pipe(gulp.dest("dest/views"))
+    .pipe(gulp.dest("dest"))
 });
 
 gulp.task("sass", () => {
@@ -39,6 +39,6 @@ gulp.task("sass", () => {
 
 gulp.task("default", ["assets", "webserver"], () => {
   gulp.watch("./app/styles/*.scss", ["sass"]);
-  gulp.watch("./app/views/*.pug", ["pug"]);
+  gulp.watch(["./app/views/*.pug", "./app/*.pug"], ["pug"]);
   gulp.watch("./app/scripts/*.js", ["js"]);
 });
