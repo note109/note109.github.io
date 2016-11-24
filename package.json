@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "ghpg": "gulp build"
   },
   "repository": "https://github.com/note109/note109.github.io.git",
   "license": "MIT",

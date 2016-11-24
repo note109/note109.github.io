@@ -42,3 +42,10 @@ gulp.task("default", ["assets", "webserver"], () => {
   gulp.watch(["./app/views/*.pug", "./app/*.pug"], ["pug"]);
   gulp.watch("./app/scripts/*.js", ["js"]);
 });
+
+gulp.task("copy", () => {
+  gulp.src("./dest/**")
+    .pipe(gulp.dest("./"))
+});
+
+gulp.task("build", ["copy"], () => {});
