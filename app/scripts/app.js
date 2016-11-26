@@ -27,12 +27,28 @@ $(window).on("mousedown", (e) => {
   cursor.dragging = true;
 });
 
+$(window).on("touchstart", (e) => {
+  cursor.dragging = true;
+});
+
 $(window).on("mousemove", (e) => {
   cursor.x = e.offsetX;
   cursor.y = e.offsetY;
 });
 
+$(window).on("touchmove", (e) => {
+  const touch = e.changedTouches[0];
+
+  cursor.x = touch.pageX - touch.target.offsetLeft;
+  cursor.y = touch.pageY - touch.target.offsetTop;
+  e.preventDefault();
+});
+
 $(window).on("mouseup", (e) => {
+  cursor.dragging = false;
+});
+
+$(window).on("touchend", (e) => {
   cursor.dragging = false;
 });
 
