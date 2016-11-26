@@ -14,9 +14,9 @@ var cursor = {
 var hold = false;
 
 $(function () {
-  var circle1 = new Circle(150, 150, 40);
-  var circle2 = new Circle(150, 250, 40);
-  var circle3 = new Circle(250, 150, 40);
+  var circle1 = new Circle(-100, 100, 40);
+  var circle2 = new Circle(-100, 50, 40);
+  var circle3 = new Circle(-200, 100, 40);
 
   circle1.setChainTos([circle2, circle3]);
   circle2.setChainTos([circle1, circle3]);
@@ -33,12 +33,28 @@ $(window).on("mousedown", function (e) {
   cursor.dragging = true;
 });
 
+$(window).on("touchstart", function (e) {
+  cursor.dragging = true;
+});
+
 $(window).on("mousemove", function (e) {
   cursor.x = e.offsetX;
   cursor.y = e.offsetY;
 });
 
+$(window).on("touchmove", function (e) {
+  var touch = e.changedTouches[0];
+
+  cursor.x = touch.pageX - touch.target.offsetLeft;
+  cursor.y = touch.pageY - touch.target.offsetTop;
+  e.preventDefault();
+});
+
 $(window).on("mouseup", function (e) {
+  cursor.dragging = false;
+});
+
+$(window).on("touchend", function (e) {
   cursor.dragging = false;
 });
 
