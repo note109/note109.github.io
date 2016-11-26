@@ -1,11 +1,15 @@
-.wrapper {
-  filter: url("#joint");
+@import "./mixin.scss";
 
+.wrapper {
   width: calc(100vw - 50px);
   height: calc(100vh - 200px);
   margin: 25px;
   border-radius: 3px;
   border: 1px solid #000;
+
+  @include pc-size {
+    filter: url("#joint");
+  }
 }
 
 .stage {
