@@ -8,9 +8,9 @@ let cursor = {
 let hold = false;
 
 $(() => {
-  const circle1 = new Circle(150, 150, 40);
-  const circle2 = new Circle(150, 250, 40);
-  const circle3 = new Circle(250, 150, 40);
+  const circle1 = new Circle(-100, 100, 40);
+  const circle2 = new Circle(-100, 50, 40);
+  const circle3 = new Circle(-200, 100, 40);
 
   circle1.setChainTos([circle2, circle3]);
   circle2.setChainTos([circle1, circle3]);
