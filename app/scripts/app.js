@@ -140,7 +140,7 @@ class Circle {
     const dx = Math.abs(this.x - cursor.x);
     const dy = Math.abs(this.y - cursor.y);
 
-    if (dx <= this.r && dy<= this.r) {
+    if (dx <= this.r && dy <= this.r) {
       this.dragged = true;
       cursor.circle = this.id;
     }
