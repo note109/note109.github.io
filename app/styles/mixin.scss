@@ -1,0 +1,13 @@
+@import "./vars.scss";
+
+@mixin pc-size {
+  @media screen and (min-width: $SP-BREAK-POINT) {
+    @content;
+  }
+}
+
+@mixin sp-size {
+  @media screen and (max-width: $SP-BREAK-POINT) {
+    @content;
+  }
+}
